@@ -10,6 +10,6 @@ public interface CartRepository extends JpaRepository<Cart, Long> {
 
 	@Modifying
 	@Query("delete from Cart where product_id=?1")
-	public void deleteByPrductId(Long id);
+	public int deleteByPrductId(Long id);
 
 }

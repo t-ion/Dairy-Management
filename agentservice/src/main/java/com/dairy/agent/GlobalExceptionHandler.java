@@ -1,4 +1,4 @@
-package com.dairy.product.exception;
+package com.dairy.agent;
 
 import java.util.Date;
 import java.util.LinkedHashMap;

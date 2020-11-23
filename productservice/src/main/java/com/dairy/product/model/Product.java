@@ -8,13 +8,15 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
 import lombok.Data;
 
 @Data
 @Entity
 public class Product {
+	/**
+	 * The Foo class is a silly example to illustrate documentation 
+	 * comments.
+	 */
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -22,6 +24,5 @@ public class Product {
 	private String category;
 	private boolean isActive;
 	private double price;
-//	@JsonFormat(shape=JsonFormat.Shape.STRING, pattern="YYYY-MM-dd")
 	private LocalDateTime dateModified;
 }
